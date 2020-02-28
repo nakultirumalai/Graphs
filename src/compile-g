@@ -1,0 +1,9 @@
+#!/bin/bash
+g++ -g -c DFSBase.cc -o DFSBase.o -I .
+g++ -g -c GraphBase.cc -o GraphBase.o -I .
+g++ -g -c Graph.cc -o Graph.o -I .
+g++ -g -c DiGraph.cc -o DiGraph.o -I .
+g++ -g -c DFS.cc -o DFS.o -I .
+g++ -g -c main.cc -o main.o -I .
+g++ -g -o graph_test-g DFSBase.o GraphBase.o Graph.o DiGraph.o DFS.o main.o 
+
